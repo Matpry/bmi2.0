@@ -1,0 +1,20 @@
+
+import random
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+
+randomInteger = random.randint(1,4)
+
+1 == "Matt"
+2 == "Ted"
+3 == "John"
+4 == "Marry"
+
+if randomInteger == 1:
+    print("Matt is going to buy the meal today")
+elif randomInteger == 2:
+    print("Ted is going to buy the meal today")
+elif randomInteger == 3:
+    print("John is going to buy the meal today")
+else:
+    print("Marry is going to buy the meal today")
