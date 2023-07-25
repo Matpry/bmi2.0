@@ -1,0 +1,28 @@
+
+
+auctioneer_data = []
+
+def add_auction_informations(auctioneer_name, bid_amount):
+    auction_information = {
+        "auctioneer_name": auctioneer_name,
+        "bid_amount": bid_amount
+    }
+    auctioneer_data.append(auction_information)
+
+while True:
+    auctioneer_name = input("Welcome to the auction, please specify your name (type 'exit' to stop): ")
+    if auctioneer_name.lower() == "exit":
+        break
+    bid_amount = float(input("What is your bidding price? $"))
+    add_auction_informations(auctioneer_name, bid_amount)
+    clear()
+
+print("Auction results:")
+for data in auctioneer_data:
+    print(f"{data['auctioneer_name']} bid ${data['bid_amount']}")
+
+
+
+print("Auction results:")
+for data in auctioneer_data:
+    print(f"{data['auctioneer_name']} bid ${data['bid_amount']}")
